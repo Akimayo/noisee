@@ -2,6 +2,7 @@
   "name": "noisee",
   "version": "0.1.0",
   "private": true,
+	"homepage": ".",
   "dependencies": {
     "@fluentui/react": "^7.161.0",
     "@testing-library/jest-dom": "^5.11.4",
