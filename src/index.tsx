@@ -8,7 +8,6 @@ import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import Backend from "i18next-http-backend";
 import { initializeIcons } from "@fluentui/react";
-import { PathPrefix } from "./lib/routing";
 
 i18n
 	.use(Backend)
@@ -20,9 +19,6 @@ i18n
 		debug: process.env.NODE_ENV == "development",
 		interpolation: {
 			escapeValue: false,
-		},
-		backend: {
-			loadPath: `${PathPrefix}/locales/{{lng}}/{{ns}}.json`
 		}
 	});
 initializeIcons();

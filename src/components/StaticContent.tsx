@@ -2,7 +2,6 @@ import { Shimmer, ShimmerElementType } from "@fluentui/react";
 import { useTheme } from "@fluentui/react-theme-provider";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { PathPrefix } from "../lib/routing";
 import Remark from "./Remark";
 
 export interface StaticContentProps {
