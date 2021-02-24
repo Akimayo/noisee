@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./App.scss";
 import AutoRouter from "./components/AutoRouter";
 import Loading from "./components/Loading";
-import { Routes } from "./lib/routing";
+import { PathPrefix, Routes } from "./lib/routing";
 import { darkTheme, lightTheme } from "./lib/theming";
 
 const App: React.FC = () => {
@@ -44,7 +44,7 @@ const App: React.FC = () => {
 							onChange={(_, checked) => setDarkTheme(checked === true)}
 						/>
 					</div>
-					<BrowserRouter>
+					<BrowserRouter basename={PathPrefix}>
 						<AutoRouter>{Routes}</AutoRouter>
 					</BrowserRouter>
 				</Suspense>
