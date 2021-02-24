@@ -26,4 +26,4 @@ export const Routes = [
 	},
 	{ key: "app", body: App, icon: "WebAppBuilderFragment", isEnabled: false },
 ] as RoutedObject[];
-export const PathPrefix: string = process.env.HOME_PATH || '';
+export const PathPrefix: string = process.env.REACT_APP_HOME_PATH || '';
