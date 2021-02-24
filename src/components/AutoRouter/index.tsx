@@ -11,7 +11,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaPredicate } from "react-media-hook";
 import { Redirect, Route, useHistory, useLocation } from "react-router-dom";
-import { RoutedObject } from "../../lib/routing";
+import { PathPrefix, RoutedObject } from "../../lib/routing";
 
 import "./styles.scss";
 import languages from "./langs.json";
@@ -20,7 +20,7 @@ import languages from "./langs.json";
  * Transforms item key into its URL
  */
 export const urlFromItem = (item: RoutedObject) =>
-	`${process.env.HOME_PATH || ""}/${
+	`${PathPrefix}/${
 		item.isDefault ? "" : item.key.replace(".$", "").replaceAll(".", "/")
 	}`;
 interface INavLinkMod extends INavLink {
