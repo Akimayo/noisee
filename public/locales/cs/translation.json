@@ -1,0 +1,13 @@
+{
+	"intro": "Úvod",
+	"source": "Zobrazit zdrojový kód",
+	"thesis": "Bakalářská práce",
+	"sketches": {
+		"$": "Projekty",
+		"simple": "Start"
+	},
+	"app": "Tato aplikace",
+	"noBody": "> **Obsah se bohužel nepodařilo načíst**",
+	"noBodyError": "> Buď se vyskytly potíže s připojením k Internetu, nebo jsem někde něco pokazil. (Chyba: `{{ error }}`)",
+	"noBodyLocale": "> Tato stránka ještě nemá český překlad. Můžete to zkusit v ![jiném jazyce](LocaleLanguage), nebo se vrátit v budoucnu."
+}

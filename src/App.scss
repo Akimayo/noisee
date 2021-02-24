@@ -1,0 +1,22 @@
+$headerHeight: 48px;
+#content {
+	min-height: calc(100vh - #{$headerHeight});
+	margin-top: $headerHeight;
+}
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 255;
+	height: $headerHeight;
+	box-shadow: 0 0 12px #0008;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 16px;
+	.ms-Toggle {
+		margin-bottom: unset;
+	}
+}
