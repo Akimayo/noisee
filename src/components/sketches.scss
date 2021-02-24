@@ -1,0 +1,18 @@
+.sketch-window {
+	flex-flow: row nowrap;
+	@media (max-width: 900px) {
+		flex-flow: column;
+	}
+}
+.sketch-canvas-wrapper canvas {
+	width: 100% !important;
+	height: auto !important;
+}
+.sketch-controls-wrapper {
+	padding: 24px;
+	box-shadow: 0 0 24px #0008;
+	.ms-Stack {
+		height: calc(100% - 36px);
+		justify-content: space-evenly;
+	}
+}

@@ -1,0 +1,65 @@
+@import "../../App.scss";
+$navWidth: 224px;
+.navpanel {
+	position: fixed;
+	left: 0;
+	top: $headerHeight;
+	bottom: 0;
+	width: $navWidth;
+	box-shadow: 0 0 8px #0008;
+	transition-property: width, box-shadow;
+	transition-timing-function: linear;
+	transition-duration: 200ms;
+	z-index: 1;
+	@media (max-width: 900px) {
+		width: 0;
+		box-shadow: 0 0 0 #0008;
+	}
+}
+.navbtn {
+	display: block;
+	position: fixed;
+	right: -200px;
+	bottom: 8px;
+	z-index: 4;
+	transition: right linear 200ms;
+	@media (max-width: 900px) {
+		right: 8px;
+	}
+	.ms-Icon {
+		font-weight: bold;
+		vertical-align: sub;
+		padding-right: 4px;
+		font-size: 16px;
+	}
+	.ms-Button-flexContainer {
+		flex-direction: column;
+	}
+}
+main {
+	margin-left: $navWidth;
+	width: calc(100% - #{$navWidth} - 128px);
+	padding: 24px 64px 8px;
+	@media (max-width: 900px) {
+		margin-left: unset;
+		width: 100%;
+		padding: 0 0 8px;
+	}
+}
+.app-top-commands {
+	margin-left: $navWidth;
+	width: calc(100% - #{$navWidth});
+	.ms-CommandBar {
+		background-color: transparent;
+	}
+	@media (max-width: 900px) {
+		margin-left: unset;
+		width: 100%;
+		.ms-CommandBar {
+			display: none;
+		}
+	}
+}
+.root-121 { // ???
+	background-color: transparent;
+}

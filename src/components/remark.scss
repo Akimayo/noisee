@@ -1,0 +1,12 @@
+.text-body {
+	display: block;
+	i {
+		vertical-align: middle;
+	}
+	@media (max-width: 900px) {
+		padding: 0 24px;
+	}
+}
+a {
+	text-decoration: none;
+}
