@@ -21,7 +21,7 @@ const StaticContent: React.FC<React.PropsWithChildren<StaticContentProps>> = ({
 	 */
 	useEffect(() => {
 		if (bodyLocation)
-			fetch(`${PathPrefix}${bodyLocation}`)
+			fetch(bodyLocation)
 				.then((rs) => rs.text())
 				.then((t) => setMdBody(t))
 				.catch((error) =>
