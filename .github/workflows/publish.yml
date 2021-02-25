@@ -44,12 +44,3 @@ jobs:
           remote_folder: noisee/
           local_folder: build
           cleanup: true
-      - name: Include ALL public
-        uses: sand4rt/ftp-deployer@v1.1
-        with:
-          host: ${{ secrets.FTP_SERVER_ADDR }}
-          username: ${{ secrets.FTP_UPLDR_NAME }}
-          password: ${{ secrets.FTP_UPLDR_PASS }}
-          remote_folder: noisee/
-          local_folder: public
-          cleanup: false
