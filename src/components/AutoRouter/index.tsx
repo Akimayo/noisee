@@ -7,7 +7,7 @@ import {
 	Nav,
 	Panel,
 } from "@fluentui/react";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaPredicate } from "react-media-hook";
 import { Redirect, Route, useHistory, useLocation } from "react-router-dom";
@@ -31,6 +31,8 @@ const AutoRouter: React.FC<{ children: RoutedObject[] }> = ({
 	const { t, i18n } = useTranslation();
 	const browserHistory = useHistory();
 	const location = useLocation();
+	const initPath = useMemo(() => location.pathname, []);
+	const [navCount, setNavCount] = useState(0);
 	/**
 	 * Recursively maps input objects into FluentUI's Nav items
 	 */
@@ -83,10 +85,13 @@ const AutoRouter: React.FC<{ children: RoutedObject[] }> = ({
 	 * Transforms current location into the item key
 	 */
 	const getKeyFromPath = useCallback(
-		() => location.pathname.substr(1).replaceAll("/", "."),
+		(path?: string) =>
+			(path || location.pathname).substr(1).replaceAll("/", "."),
 		[location]
 	);
-	const [selectedKey, setSelectedKey] = useState<string>();
+	const [selectedKey, setSelectedKey] = useState<string>(
+		getKeyFromPath(initPath)
+	);
 	/**
 	 * Attempts to correctly set selected item in FluentUI's Nav
 	 */
@@ -100,6 +105,16 @@ const AutoRouter: React.FC<{ children: RoutedObject[] }> = ({
 		);
 	}, [getKeyFromPath, location]);
 	/**
+	 * When reloading page or typing URL manually, prevent going to homepage
+	 */
+	useEffect(() => {
+		navCount < 3 && setNavCount(navCount + 1);
+	}, [browserHistory, location, setNavCount]);
+	navCount === 2 &&
+		initPath.length > 1 &&
+		location.pathname.length <= 1 &&
+		browserHistory.push(initPath); // Technically, this should work inside the above side-effect, but it doesn't, so it's checked every render.
+	/**
 	 * Replaces FluentUI's stupid links with React Router friendly redirects
 	 */
 	const handleLinkClick = useCallback(
@@ -107,6 +122,7 @@ const AutoRouter: React.FC<{ children: RoutedObject[] }> = ({
 			evt?.preventDefault();
 			item && item.key && setSelectedKey(item.key);
 			browserHistory.push((item as INavLinkMod).link);
+			setOpen(false);
 		},
 		[setSelectedKey]
 	);
