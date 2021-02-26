@@ -5,7 +5,8 @@
 	"thesis": "Bakalářská práce",
 	"sketches": {
 		"$": "Projekty",
-		"simple": "Start"
+		"simple": "Start",
+		"noisemap": "Šumová mapa"
 	},
 	"app": "Tato aplikace",
 	"noBody": "> **Obsah se bohužel nepodařilo načíst**",

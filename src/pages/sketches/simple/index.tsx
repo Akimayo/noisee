@@ -33,7 +33,7 @@ const Simple: React.FC = () => {
 				styles={{ root: { height: "calc(100% - 32px)" } }}
 			>
 				<Slider
-					label={t("simple.speed")}
+					label={t("step")}
 					min={0.0025}
 					max={0.04}
 					step={0.0025}
@@ -43,7 +43,7 @@ const Simple: React.FC = () => {
 					vertical={!isMobile}
 				/>
 				<Slider
-					label={t("simple.amplitude")}
+					label={t("amplitude")}
 					min={0.1}
 					max={1.5}
 					step={0.1}

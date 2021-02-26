@@ -5,7 +5,8 @@
 	"thesis": "Bachelor Thesis",
 	"sketches": {
 		"$": "Projects",
-		"simple": "Start"
+		"simple": "Start",
+		"noisemap": "Noise Map"
 	},
 	"app": "This App",
 	"noBody": "> **Unfortunatelly, this content couldn't  be loaded**",

@@ -1,6 +1,8 @@
 {
-	"simple": {
-		"speed": "Step Size",
-		"amplitude": "Amplitude"
+	"step": "Step Size",
+	"amplitude": "Amplitude",
+	"quality": {
+		"quality": "Quality",
+		"warning": "WARNING: Setting quality to highest will do {{ operations }} operations and make the app unresponsive for several seconds."
 	}
 }
