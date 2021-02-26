@@ -1,6 +1,5 @@
 import { Slider, Stack } from "@fluentui/react";
-import { useTheme } from "@fluentui/react-theme-provider";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import SketchContent from "../../../components/SketchContent";
 import { useIsMobile } from "../../../lib/ismobile-hook";
@@ -15,7 +14,6 @@ const Simple: React.FC = () => {
 	} catch {
 		toText = null;
 	}
-	const palette = useTheme().palette;
 	const [speed, setSpeed] = useState<number>(0.01);
 	const [amplitude, setAmplitude] = useState<number>(1);
 	const isMobile = useIsMobile();
@@ -25,8 +23,6 @@ const Simple: React.FC = () => {
 			sketch={sketch}
 			sketchProps={
 				{
-					background,
-					foreground,
 					speed,
 					amplitude,
 				} as SimpleSketchProps

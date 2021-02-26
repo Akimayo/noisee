@@ -4,8 +4,6 @@ import { ReactP5 } from "../../../components/SketchContent";
 export interface SimpleSketchProps {
 	speed: number;
 	amplitude: number;
-	background: string;
-	foreground: string;
 }
 export default (p: ReactP5<SimpleSketchProps>) => {
 	let speed: number = 0.01;
