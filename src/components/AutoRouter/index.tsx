@@ -9,12 +9,12 @@ import {
 } from "@fluentui/react";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useMediaPredicate } from "react-media-hook";
 import { Redirect, Route, useHistory, useLocation } from "react-router-dom";
 import { RoutedObject } from "../../lib/routing";
 
 import "./styles.scss";
 import languages from "./langs.json";
+import { useIsMobile } from "../../lib/ismobile-hook";
 
 /**
  * Transforms item key into its URL
@@ -79,7 +79,7 @@ const AutoRouter: React.FC<{ children: RoutedObject[] }> = ({
 		},
 		[urlFromItem]
 	);
-	const isMobile = useMediaPredicate("(max-width: 900px");
+	const isMobile = useIsMobile();
 	const [isOpen, setOpen] = useState(false);
 	/**
 	 * Transforms current location into the item key
