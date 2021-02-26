@@ -126,6 +126,20 @@ const AutoRouter: React.FC<{ children: RoutedObject[] }> = ({
 		},
 		[setSelectedKey]
 	);
+	const downloadCanvas = useCallback(() => {
+		document.querySelector("canvas")?.toBlob(
+			(blob) => {
+				const anchor = document.createElement("a");
+				anchor.download = `${selectedKey}.png`;
+				anchor.href = URL.createObjectURL(blob);
+				anchor.click();
+				URL.revokeObjectURL(anchor.href);
+			},
+			"image/png",
+			1
+		);
+	}, [selectedKey]);
+	const isSketch = location.pathname.includes("sketches/");
 	return (
 		<>
 			<Panel isOpen={isOpen && isMobile} onDismiss={() => setOpen(false)}>
@@ -184,6 +198,13 @@ const AutoRouter: React.FC<{ children: RoutedObject[] }> = ({
 								: "/" + config.find((i) => i.isDefault)?.key
 						}`,
 						target: "_blank",
+					},
+					{
+						key: "download",
+						iconProps: isSketch ? { iconName: "Download" } : undefined,
+						text: isSketch ? t("download") : undefined,
+						onClick: downloadCanvas,
+						disabled: !isSketch,
 					},
 				]}
 			/>
