@@ -1,10 +1,12 @@
 {
 	"intro": "Úvod",
 	"source": "Zobrazit zdrojový kód",
+	"download": "Stáhnout obrázek",
 	"thesis": "Bakalářská práce",
 	"sketches": {
 		"$": "Projekty",
-		"simple": "Start"
+		"simple": "Start",
+		"noisemap": "Šumová mapa"
 	},
 	"app": "Tato aplikace",
 	"noBody": "> **Obsah se bohužel nepodařilo načíst**",

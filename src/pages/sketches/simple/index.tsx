@@ -1,9 +1,8 @@
 import { Slider, Stack } from "@fluentui/react";
-import { useTheme } from "@fluentui/react-theme-provider";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useMediaPredicate } from "react-media-hook";
 import SketchContent from "../../../components/SketchContent";
+import { useIsMobile } from "../../../lib/ismobile-hook";
 
 import sketch, { SimpleSketchProps } from "./sketch";
 
@@ -15,26 +14,15 @@ const Simple: React.FC = () => {
 	} catch {
 		toText = null;
 	}
-	const palette = useTheme().palette;
 	const [speed, setSpeed] = useState<number>(0.01);
 	const [amplitude, setAmplitude] = useState<number>(1);
-	const [background, setBackground] = useState<string>(
-		palette.neutralQuaternary
-	);
-	const [foreground, setForeground] = useState<string>(palette.accent);
-	useEffect(() => {
-		setForeground(palette.accent);
-		setBackground(palette.neutralQuaternary);
-	}, [palette]);
-	const isMobile = useMediaPredicate("(max-width: 900px)");
+	const isMobile = useIsMobile();
 	return (
 		<SketchContent
 			bodyLocation={toText}
 			sketch={sketch}
 			sketchProps={
 				{
-					background,
-					foreground,
 					speed,
 					amplitude,
 				} as SimpleSketchProps
@@ -45,7 +33,7 @@ const Simple: React.FC = () => {
 				styles={{ root: { height: "calc(100% - 32px)" } }}
 			>
 				<Slider
-					label={t("simple.speed")}
+					label={t("step")}
 					min={0.0025}
 					max={0.04}
 					step={0.0025}
@@ -55,7 +43,7 @@ const Simple: React.FC = () => {
 					vertical={!isMobile}
 				/>
 				<Slider
-					label={t("simple.amplitude")}
+					label={t("amplitude")}
 					min={0.1}
 					max={1.5}
 					step={0.1}

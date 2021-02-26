@@ -31,7 +31,7 @@ const SketchContent: React.FC<React.PropsWithChildren<SketchContentProps>> = ({
 				}}
 			>
 				<Stack.Item grow={1} className="sketch-canvas-wrapper">
-					<P5Wrapper sketch={sketch} {...sketchProps} />
+					<P5Wrapper sketch={sketch} {...sketchProps} background={palette.neutralQuaternary} foreground={palette.accent} />
 				</Stack.Item>
 				<Stack.Item
 					grow={1}
@@ -50,5 +50,7 @@ const SketchContent: React.FC<React.PropsWithChildren<SketchContentProps>> = ({
 };
 export default SketchContent;
 export interface ReactP5<T = any> extends p5 {
-	myCustomRedrawAccordingToNewPropsHandler: (props: T) => void;
+	myCustomRedrawAccordingToNewPropsHandler: (
+		props: T & { background: string; foreground: string }
+	) => void;
 }

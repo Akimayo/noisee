@@ -1,6 +1,10 @@
 {
-	"simple": {
-		"speed": "Krok",
-		"amplitude": "Amplituda"
+	"step": "Krok",
+	"amplitude": "Amplituda",
+	"quality": {
+		"quality": "Kvalita",
+		"reduced": "Snížená",
+		"full": "Plná",
+		"warning": "POZOR: Nastavení kvality na nejvyšší provede {{ operations }} operací a aplikace několik sekund nebude reagovat."
 	}
 }
