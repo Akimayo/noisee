@@ -6,9 +6,11 @@
 	"sketches": {
 		"$": "Projekty",
 		"simple": "Start",
-		"noisemap": "Šumová mapa"
+		"noisemap": "Šumová mapa",
+		"interference": "Interference"
 	},
 	"app": "Tato aplikace",
+	"gen": "Generátory",
 	"noBody": "> **Obsah se bohužel nepodařilo načíst**",
 	"noBodyError": "> Buď se vyskytly potíže s připojením k Internetu, nebo jsem někde něco pokazil. (Chyba: `{{ error }}`)",
 	"noBodyLocale": "> Tato stránka ještě nemá český překlad. Můžete to zkusit v ![jiném jazyce](LocaleLanguage), nebo se vrátit v budoucnu."

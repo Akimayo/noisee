@@ -9,6 +9,7 @@
 		"noisemap": "Noise Map"
 	},
 	"app": "This App",
+	"gen": "Generators",
 	"noBody": "> **Unfortunatelly, this content couldn't  be loaded**",
 	"noBodyError": "> There's either something wrong with your Internet connection, or I've messed something up. (Error: (Chyba: `{{ error }}`))",
 	"noBodyLocale": "> This page doesn't have an English translation available. Either try a different language, or check back later."
