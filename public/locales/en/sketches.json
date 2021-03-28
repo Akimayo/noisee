@@ -4,5 +4,15 @@
 	"quality": {
 		"quality": "Quality",
 		"warning": "WARNING: Setting quality to highest will do {{ operations }} operations and make the app unresponsive for several seconds."
-	}
+	},
+	"interferenceAmplitude": "Strength",
+	"function": "Function",
+	"functions": {
+		"sine": "Sine",
+		"square": "Square",
+		"saw": "Saw",
+		"triangle": "Triangle",
+		"constant": "Constant"
+	},
+	"octaves": "Octaves"
 }

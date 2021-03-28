@@ -6,5 +6,15 @@
 		"reduced": "Snížená",
 		"full": "Plná",
 		"warning": "POZOR: Nastavení kvality na nejvyšší provede {{ operations }} operací a aplikace několik sekund nebude reagovat."
-	}
+	},
+	"interferenceAmplitude": "Síla rušení",
+	"function": "Funkce",
+	"functions": {
+		"sine": "Sinus",
+		"square": "Obdélník",
+		"saw": "Pila",
+		"triangle": "Trojúhelník",
+		"constant": "Konstantní"
+	},
+	"octaves": "Oktávy"
 }

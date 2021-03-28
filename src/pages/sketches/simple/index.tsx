@@ -1,4 +1,4 @@
-import { Slider, Stack } from "@fluentui/react";
+import { Slider } from "@fluentui/react";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import SketchContent from "../../../components/SketchContent";
@@ -28,10 +28,6 @@ const Simple: React.FC = () => {
 				} as SimpleSketchProps
 			}
 		>
-			<Stack
-				horizontal={!isMobile}
-				styles={{ root: { height: "calc(100% - 32px)" } }}
-			>
 				<Slider
 					label={t("step")}
 					min={0.0025}
@@ -52,7 +48,6 @@ const Simple: React.FC = () => {
 					onChange={setAmplitude}
 					vertical={!isMobile}
 				/>
-			</Stack>
 		</SketchContent>
 	);
 };

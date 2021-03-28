@@ -11,30 +11,35 @@ export const RemarkLink: React.FC<
 > = ({ href, children }) => {
 	const theme = useTheme();
 	const isLocal = href?.match(/^\/\w*/);
-	return (
-		<Link to={href || ""} target={isLocal ? "" : "_blank"}>
+	return isLocal ? (
+		<Link to={href || ""}>
 			<Text
 				styles={{ root: { color: theme.palette.themeDark } }}
 				variant="large"
 			>
 				{children}
 			</Text>
-			{isLocal ? (
-				""
-			) : (
-				<Icon
-					iconName="OpenInNewTab"
-					styles={{
-						root: {
-							fontSize: theme.fonts.tiny.fontSize,
-							color: theme.palette.themeDarker,
-							verticalAlign: "sup",
-							paddingLeft: "2px",
-						},
-					}}
-				/>
-			)}
 		</Link>
+	) : (
+		<a href={href} target="_blank">
+			<Text
+				styles={{ root: { color: theme.palette.themeDark } }}
+				variant="large"
+			>
+				{children}
+			</Text>
+			<Icon
+				iconName="OpenInNewTab"
+				styles={{
+					root: {
+						fontSize: theme.fonts.tiny.fontSize,
+						color: theme.palette.themeDarker,
+						verticalAlign: "sup",
+						paddingLeft: "2px",
+					},
+				}}
+			/>
+		</a>
 	);
 };
 export const RemarkImageIcon: React.FC<
