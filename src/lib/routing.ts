@@ -20,7 +20,7 @@ export const Sketches = [
 	{ key: "sketches.simple", body: Simple, icon: "CompassNW" },
 	{ key: "sketches.noisemap", body: NoiseMap, icon: "CompassNW" },
 	{ key: "sketches.interference", body: Interference, icon: "GridViewMedium" },
-	{ key: "sketches.topography", body: Topography, icon: "GridViewMedium" }
+	// { key: "sketches.topography", body: Topography, icon: "GridViewMedium" }
 ] as RoutedObject[];
 
 export const Routes = [
