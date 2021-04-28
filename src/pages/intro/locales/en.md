@@ -1,4 +1,4 @@
-[![Arcade world](/img-show-arcade.png)](/sketches/arcade)[![Landscape](/img-show-landscape.png)](/sketches/landscape)
+[![Arcade world](./img-show-arcade.png)](/sketches/arcade)[![Landscape](./img-show-landscape.png)](/sketches/landscape)
 # noisee
 _noisee_ is an interactive visualization tool for different uses of procedurally generated gradient noise.
 

@@ -1,4 +1,4 @@
-[![Arkádový svět](/img-show-arcade.png)](/sketches/arcade)[![Krajina](/img-show-landscape.png)](/sketches/landscape)
+[![Arkádový svět](./img-show-arcade.png)](/sketches/arcade)[![Krajina](./img-show-landscape.png)](/sketches/landscape)
 # noisee
 _noisee_ je interaktivní nástroj pro vizualizaci různých využití procedurálně generovaných gradientních šumů.
 
