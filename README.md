@@ -3,7 +3,7 @@ Vizualizace procedurálně generovaných gradientních šumů a některých jeji
 
 **Současná verze je verzí odevzdanou v rámci bakalářské práce.**
 
-Více informací o algoritmech samotných obsahuje [Úvod](./tree/master/src/pages/intro#readme), zdrojový kód jednotlivých projektů naleznete [zde](./tree/master/src/pages/sketches).
+Více informací o algoritmech samotných obsahuje [Úvod](./src/pages/intro#readme), zdrojový kód jednotlivých projektů naleznete [zde](./src/pages/sketches).
 
 ## Sestavení
 Apliakce je založena na frameworku [React](https://reactjs.org) a používá správce balíčků [Yarn](https://yarnpkg.com).
@@ -20,4 +20,4 @@ yarn build
 ```
 Výstupní soubory aplikace budou vytvořeny v adresáři `build/`, který lze přímo nahrát na webový server a provozovat takto. Konkrétně provoz aplikace _noisee_ probíhá na Apache PHP serveru, kde je nutné upravit nadřazený `.htaccess` soubor tak, aby veškeré požadavky byly interně směrovány na soubor `build/index.html`, kde adresu přebere React Router a načte správnou stránku.
 ### CI/CD
-Pro automatizované nasazení nových verzí aplikace je využito GitHub Actions. [Tato workflow](./blob/master/.github/workflows/publish.yml) sestaví React aplikaci a její soubory nahraje na webový server pomocí FTP.
+Pro automatizované nasazení nových verzí aplikace je využito GitHub Actions. [Tato workflow](./.github/workflows/publish.yml) sestaví React aplikaci a její soubory nahraje na webový server pomocí FTP.
