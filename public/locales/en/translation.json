@@ -6,11 +6,17 @@
 	"sketches": {
 		"$": "Projects",
 		"simple": "Start",
-		"noisemap": "Noise Map"
+		"noisemap": "Noise Map",
+		"interference": "Interference",
+		"landscape": "Landscape",
+		"arcade": "Arcade World",
+		"flower": "Flower",
+		"screensaver": "Screensaver"
 	},
 	"app": "This App",
 	"gen": "Generators",
 	"noBody": "> **Unfortunatelly, this content couldn't  be loaded**",
-	"noBodyError": "> There's either something wrong with your Internet connection, or I've messed something up. (Error: (Chyba: `{{ error }}`))",
-	"noBodyLocale": "> This page doesn't have an English translation available. Either try a different language, or check back later."
+	"noBodyError": "> There's either something wrong with your Internet connection, or I've messed something up. (Error: `{{ error }}`)",
+	"noBodyLocale": "> This page doesn't have an English description available. Either try a different language, or check back later.",
+	"letsgo": "Let's go"
 }

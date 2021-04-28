@@ -18,7 +18,7 @@ const Intro: React.FC = () => {
 			<PrimaryButton
 				onClick={() => browserHistory.push("/sketches/simple")}
 				iconProps={{ iconName: "Forward" }}
-				text={t("sketches.simple")}
+				text={t("letsgo")}
 			/>
 		</StaticContent>
 	);
