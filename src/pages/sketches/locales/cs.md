@@ -1,8 +1,13 @@
 # Projekty
+Projekty jsou jednotlivé ukázky případů užití procedurálně generovaného gradientního šumu, konkrétně jeho varianty _Perlin Noise_. Každý projekt se snaží ukázat určité reálně aplikovatelné využití a poskytnou interaktivní prostor pro vyzkoušení těchto užití.
 
+Projekty mají výchozí nastavení volená tak, aby nebyly příliš náročné a bylo je možné bez problémů spustit i na méně výkonných zařízeních. Některé jsou ale už z principu náročné, proto je možné, že některé mohou způsobit nestabilní nebo pomalé chování webového prohlížeče. U náročnéjších projektů, kde mohou určitá nastavení způsobit významné zpomalení, je u těchto nastavení vždy ikonka varování.
+
+Projekty jsou bez problémů spustitelné a ovladatelné i na mobilních zařízeních. Je ale zachovávána velikost plátna (zpravidla rozlišení HD, 1280×720px), což při zmenšení na malé displeje způsobuje ztrátu kvality.
 ## Značky
 Pod každým projektem najdete sadu značek. Ty Vám rychle poví, jak rychle projekt poběží, jaké vykreslování používá a jaký vstupní vektor je použit v šumovém algoritmu. Tady je krátký slovník:
 - **![Úvod](CompassNW):** Projekty, které popisují úplné základy. Najdete zde jeden úvodní projekt pro 1D, 2D a 3D.
+- **![Praktická část](Education):** Projekty, které jsou součástí praktické části [bakalářské práce](/thesis).
 - **![P2D](MapLayers):** Projekt využívá základní vykreslování P2D. Takovéto projekty nejsou zpravidla příliš výpočetně náročné a nepoužívají grafické jádro Vašeho zařízení.
 - **![WebGL](ProductVariant):** Projekt k vykreslování používá grafickou knihovnu WebGL. Ta umožňuje využít výpočetní síly grafického jádra Vašeho zařízení a je vyžadována pro 3D vykreslování. (Také je občas využívána pro zrychlení náročných 2D projektů.)
 - **![Rychlý](StorageOptical)** projekt nejspíš rozjedete i na kalkulačce.

@@ -16,5 +16,50 @@
 		"triangle": "Trojúhelník",
 		"constant": "Konstantní"
 	},
-	"octaves": "Oktávy"
+	"octaves": "Oktávy",
+	"wireframe": {
+		"$": "Drátový model",
+		"warning": "VAROVÁNÍ: Drátový model sice skvěle zvýrazní všechny tvary krajiny, ale vykreslení takovéhoto množství čar je extrémně náročné a zapnutím této možnosti se snímková frekvence projektu sníží na <1FPS",
+		"on": "Drátový model",
+		"off": "Plný materiál"
+	},
+	"components": "Součásti",
+	"terrain": "Terén",
+	"water": "Voda",
+	"clouds": "Mraky",
+	"noTerrain": "Bez terénu",
+	"noWater": "Bez vody",
+	"noClouds": "Bez mraků",
+	"depth": "Hloubka scény",
+	"tessSide": "Jemnost teselace",
+	"moveUp": "Nahoru",
+	"moveDown": "Dolů",
+	"moveLeft": "Doleva",
+	"moveForward": "Dopředu",
+	"moveBack": "Dozadu",
+	"moveRight": "Doprava",
+	"waterLevel": "Práh vody",
+	"mountainLevel": "Práh hor",
+	"gridSize": "Velikost pole",
+	"terrainScale": "Měřítko",
+	"character": {
+		"$": "Postava se může pohybovat",
+		"athletic": "Všude",
+		"lazy": "Pouze na rovině"
+	},
+	"layers": "Počet vrstev",
+	"spacing": "Odstup vrstev",
+	"rotate": {
+		"$": "Animace",
+		"on": "Zapnutá",
+		"off": "Vypnutá"
+	},
+	"transform": {
+		"$": "Transformace",
+		"scalar": "Skalární",
+		"vector": "Vektorová"
+	},
+	"particles": "Počet částic",
+	"force": "Síla pole",
+	"tiles": "Rozlišení pole"
 }

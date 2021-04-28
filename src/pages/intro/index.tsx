@@ -2,6 +2,8 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import StaticContent from "../../components/StaticContent";
 
+import "./align-images.scss";
+
 const Intro: React.FC = () => {
 	const { i18n } = useTranslation();
 	let toText: string | undefined | null;
@@ -10,8 +12,6 @@ const Intro: React.FC = () => {
 	} catch {
 		toText = null;
 	}
-	return (
-		<StaticContent bodyLocation={toText} />
-	);
+	return <StaticContent bodyLocation={toText} />;
 };
 export default Intro;

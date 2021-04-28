@@ -140,18 +140,19 @@ const AutoRouter: React.FC<{ children: RoutedObject[] }> = ({
 		);
 	}, [selectedKey]);
 	const isSketch = location.pathname.includes("sketches/");
+	const visibleItems = config.filter(i => i.isVisible !== false);
 	return (
 		<>
 			<Panel isOpen={isOpen && isMobile} onDismiss={() => setOpen(false)}>
 				<Nav
-					groups={[{ links: config.map(routedObjectMapper) }]}
+					groups={[{ links: visibleItems.map(routedObjectMapper) }]}
 					onLinkClick={handleLinkClick}
 					selectedKey={selectedKey}
 				/>
 			</Panel>
 			<Nav
 				className="navpanel"
-				groups={[{ links: config.map(routedObjectMapper) }]}
+				groups={[{ links: visibleItems.map(routedObjectMapper) }]}
 				onLinkClick={handleLinkClick}
 				selectedKey={selectedKey}
 			/>

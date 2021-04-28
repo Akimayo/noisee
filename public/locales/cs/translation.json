@@ -7,11 +7,18 @@
 		"$": "Projekty",
 		"simple": "Start",
 		"noisemap": "Šumová mapa",
-		"interference": "Interference"
+		"interference": "Interference",
+		"landscape": "Krajina",
+		"flower": "Květ",
+		"arcade": "Arkádový svět",
+		"screensaver": "Spořič obrazovky"
 	},
 	"app": "Tato aplikace",
-	"gen": "Generátory",
+	"gen": "Generátory vizualizací",
 	"noBody": "> **Obsah se bohužel nepodařilo načíst**",
 	"noBodyError": "> Buď se vyskytly potíže s připojením k Internetu, nebo jsem někde něco pokazil. (Chyba: `{{ error }}`)",
-	"noBodyLocale": "> Tato stránka ještě nemá český překlad. Můžete to zkusit v ![jiném jazyce](LocaleLanguage), nebo se vrátit v budoucnu."
+	"noBodyLocale": "> Tato stránka ještě nemá popis v českém jazyce. Můžete to zkusit v ![jiném jazyce](LocaleLanguage), nebo se vrátit v budoucnu.",
+	"letsgo": "Jdeme na to",
+	"aboutThesis": "Tato aplikace byla vytvořena jako praktická část bakalářské práce. Více informací lze získat kliknutím na tlačítko níže. V bakalářské práci byla použita řada vizualizací, které byly vygenerované vlastním nástrojem. Ten je dostupný pod tlačítkem Generátory vizualizací.",
+	"downloadGen": "Stáhnout Processing projekt (ZIP)"
 }

@@ -14,5 +14,50 @@
 		"triangle": "Triangle",
 		"constant": "Constant"
 	},
-	"octaves": "Octaves"
+	"octaves": "Octaves",
+	"wireframe": {
+		"$": "Wireframe",
+		"warning": "WARNING: While a wireframe may make the shapes clearer, rendering this many lines is extremely slow and drops the framerate to <1FPS",
+		"on": "Rendering Wireframe",
+		"off": "Rendering Solid Material"
+	},
+	"components": "Components",
+	"terrain": "Terrain",
+	"water": "Water",
+	"clouds": "Clouds",
+	"noTerrain": "No Terrain",
+	"noWater": "No Water",
+	"noClouds": "No Clouds",
+	"depth": "Scene Depth",
+	"tessSide": "Tesselation Size",
+	"moveUp": "Move Up",
+	"moveDown": "Move Down",
+	"moveLeft": "Move Left",
+	"moveForward": "Move Forward",
+	"moveBack": "Move Backward",
+	"moveRight": "Move Right",
+	"waterLevel": "Water Level",
+	"mountainLevel": "Mountain Level",
+	"gridSize": "Tile Size",
+	"terrainScale": "Scale",
+	"character": {
+		"$": "Character Can Traverse",
+		"athletic": "All terrains",
+		"lazy": "Only grassy"
+	},
+	"layers": "Layers",
+	"spacing": "Layer Spacing",
+	"rotate": {
+		"$": "Animation",
+		"on": "Active",
+		"off": "Off"
+	},
+	"transform": {
+		"$": "Transformation",
+		"scalar": "Scalar",
+		"vector": "Vector"
+	},
+	"particles": "Particle Count",
+	"force": "Field Force",
+	"tiles": "Field Grid"
 }

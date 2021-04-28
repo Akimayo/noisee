@@ -1,15 +1,17 @@
 import React from "react";
 import unified from "unified";
-import parse from "remark-parse";
+import remarkParse from "remark-parse";
 import remark2react from "remark-react";
 import { Text } from "@fluentui/react";
 import { RemarkImageIcon, RemarkLink } from "./RemarkElements";
 
 import "./remark.scss";
+import remarkGfm from "remark-gfm";
 
 const Remark: React.FC<{ text?: string }> = ({ text }) => {
 	const body = unified()
-		.use(parse)
+		.use(remarkParse)
+		.use(remarkGfm)
 		.use(remark2react, { remarkReactComponents: { a: RemarkLink, img: RemarkImageIcon } })
 		.processSync(text || "").result as React.ReactNode;
 	return (
